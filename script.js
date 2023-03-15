@@ -2,7 +2,7 @@
 function rot13(str) {
     var codeArr = [], seq, final = "";
     for (var i = 0; i < str.length; i++) {
-        uCode = str.charCodeAt([i]);
+       var uCode = str.charCodeAt([i]);
         if ((uCode > 64 && uCode < 78) || (uCode > 96 && uCode < 110)) {
             uCode += 13;
             codeArr.push(uCode);
@@ -11,7 +11,7 @@ function rot13(str) {
             codeArr.push(uCode);
         } else { codeArr.push(uCode); }
     }
-    //console.log(codeArr);
+    console.log(codeArr);
     for (var j = 0; j < codeArr.length; j++) {
         final += String.fromCharCode(codeArr[j]);
     }
