@@ -3,10 +3,10 @@ function rot13(str) {
     var codeArr = [], seq, final = "";
     for (var i = 0; i < str.length; i++) {
        var uCode = str.charCodeAt([i]);
-        if ((uCode > 64 && uCode < 78) || (uCode > 96 && uCode < 110)) {
+        if ((uCode > 64 && uCode < 78)) {
             uCode += 13;
             codeArr.push(uCode);
-        } else if ((uCode > 77 && uCode < 91) || (uCode > 109 && uCode < 123)){
+        } else if ((uCode > 77 && uCode < 91)){
             uCode -= 13;
             codeArr.push(uCode);
         } else { codeArr.push(uCode); }
@@ -16,3 +16,4 @@ function rot13(str) {
     }
     return final;
 }
+module.exports = rot13;
