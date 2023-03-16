@@ -16,5 +16,3 @@ function rot13(str) {
     }
     return final;
 }
-
-rot13("SERR CVMMN!");
