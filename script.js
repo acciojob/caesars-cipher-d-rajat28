@@ -11,7 +11,6 @@ function rot13(str) {
             codeArr.push(uCode);
         } else { codeArr.push(uCode); }
     }
-    console.log(codeArr);
     for (var j = 0; j < codeArr.length; j++) {
         final += String.fromCharCode(codeArr[j]);
     }
